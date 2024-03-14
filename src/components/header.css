@@ -1,0 +1,49 @@
+.header {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 1000px;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title {
+    cursor: pointer;
+    user-select: none;
+    font-size: 34px;
+    padding-left: 45px;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.menu {
+    display: flex;
+    user-select: none;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-right: 40;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+.menu-item-current {
+    text-decoration: underline;
+}
+
+.menu-item {
+    cursor: pointer;
+    color: var(--yellow);
+    margin-left: 12px;
+    margin-right: 12px;
+    mix-blend-mode: difference;
+}
+
+.menu-item:hover {
+    filter: hue-rotate(180deg) contrast(200%);
+    color: var(--yellow);
+    mix-blend-mode: difference;
+}

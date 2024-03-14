@@ -1,0 +1,61 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--yellow) 0%, var(--dark-blue) 100%);
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    border-radius: 30px;
+    height: 600px;
+    width: 1000px;
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    box-shadow: 3px 6px 25px 5px #202020;
+
+
+}
+
+.banner-left {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    border-radius: 30px;
+    background-color: var(--dark-blue);
+
+}
+
+.banner-top-right {
+    grid-column: 7/-1;
+    grid-row: 1/6;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 350px;
+    background-color: var(--yellow-light);
+
+}
+
+.banner-bottom-right {
+    grid-column: 7/-1;
+    grid-row: 5/-1;
+    border-top-left-radius: 330px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--yellow-light);
+
+}
